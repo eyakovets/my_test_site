@@ -1,0 +1,630 @@
+2015/08/04 16:12:56 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/vagrant_data/protected/views/layouts/main.php:51)
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CBaseController.php(214): CContentDecorator->run()
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CBaseController.php(308): SiteController->endWidget()
+#6 /vagrant_data/protected/views/layouts/column1.php(6): SiteController->endContent()
+#7 /vagrant_data/vendor/yiisoft/yii/framework/web/CBaseController.php(126): require()
+#8 /vagrant_data/vendor/yiisoft/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /vagrant_data/protected/controllers/SiteController.php(32): SiteController->render()
+#11 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /vagrant_data/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /vagrant_data/protected/views/layouts/main.php (51)
+in /vagrant_data/protected/views/layouts/column1.php (6)
+in /vagrant_data/protected/controllers/SiteController.php (32)
+2015/08/05 14:42:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/08/05 14:42:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/08/05 14:42:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /vagrant_data/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php/site/page?view=about
+HTTP_REFERER=http://example.com/
+---
+2015/08/05 14:42:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /vagrant_data/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php/site/page?view=about
+HTTP_REFERER=http://example.com/index.php/site/index
+---
+2015/08/05 14:46:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /vagrant_data/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php/site/page?view=about
+HTTP_REFERER=http://example.com/index.php/site/index
+---
+2015/08/05 14:46:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /vagrant_data/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php/site/page?view=about
+HTTP_REFERER=http://example.com/index.php/site/login
+---
+2015/08/05 14:46:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /vagrant_data/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+---
+2015/08/05 15:07:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /vagrant_data/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+---
+2015/08/05 15:08:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /vagrant_data/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+---
+2015/08/05 15:08:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /vagrant_data/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://example.com/site/index
+---
+2015/08/05 15:09:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /vagrant_data/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://example.com/site/index
+---
+2015/08/05 15:09:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /vagrant_data/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://example.com/site/index
+---
+2015/08/05 15:19:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "transliterate".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php:483
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(270): CController->missingAction('transliterate')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('transliterate')
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/transliter...')
+#3 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /vagrant_data/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/transliterate
+HTTP_REFERER=http://example.com/site/login
+---
+2015/08/05 15:19:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "transliterate".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php:483
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(270): CController->missingAction('transliterate')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('transliterate')
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/transliter...')
+#3 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /vagrant_data/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/transliterate
+---
+2015/08/05 15:20:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "transliterate".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php:483
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(270): CController->missingAction('transliterate')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('transliterate')
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/transliter...')
+#3 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /vagrant_data/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/transliterate
+HTTP_REFERER=http://example.com/site/transliterate
+---
+2015/08/05 15:20:39 [error] [php] require(components/TranslitHelper.php): failed to open stream: No such file or directory (/vagrant_data/protected/controllers/TransliterateController.php:2)
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#3 /vagrant_data/index.php(13): CWebApplication->run()
+REQUEST_URI=/transliterate/transliterate
+in /vagrant_data/protected/controllers/TransliterateController.php (2)
+in /vagrant_data/protected/controllers/TransliterateController.php (2)
+in /vagrant_data/index.php (13)
+2015/08/05 15:22:02 [error] [php] require(components/TranslitHelper.php): failed to open stream: No such file or directory (/vagrant_data/protected/controllers/TransliterateController.php:2)
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#3 /vagrant_data/index.php(13): CWebApplication->run()
+REQUEST_URI=/transliterate/transliterate
+in /vagrant_data/protected/controllers/TransliterateController.php (2)
+in /vagrant_data/protected/controllers/TransliterateController.php (2)
+in /vagrant_data/index.php (13)
+2015/08/05 15:23:37 [error] [php] require(components/TranslitHelper.php): failed to open stream: No such file or directory (/vagrant_data/protected/controllers/TransliterateController.php:2)
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#3 /vagrant_data/index.php(13): CWebApplication->run()
+REQUEST_URI=/transliterate/transliterate
+in /vagrant_data/protected/controllers/TransliterateController.php (2)
+in /vagrant_data/protected/controllers/TransliterateController.php (2)
+in /vagrant_data/index.php (13)
+2015/08/05 15:23:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /vagrant_data/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://example.com/site/contact
+---
+2015/08/05 15:23:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /vagrant_data/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://example.com/site/index
+---
+2015/08/05 15:24:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /vagrant_data/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://example.com/site/index
+---
+2015/08/05 15:24:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /vagrant_data/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://example.com/site/contact
+---
+2015/08/05 15:24:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /vagrant_data/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://example.com/site/contact
+---
+2015/08/05 15:24:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "transliterate".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php:483
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(270): CController->missingAction('transliterate')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('transliterate')
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('transliterate/t...')
+#3 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /vagrant_data/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/transliterate/transliterate
+HTTP_REFERER=http://example.com/site/contact
+---
+2015/08/05 15:25:11 [error] [exception.CException] exception 'CException' with message 'TransliterateController cannot find the requested view "transliterate/transliterate".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php:878
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(782): CController->renderPartial('transliterate/t...', NULL, true)
+#1 /vagrant_data/protected/controllers/TransliterateController.php(12): CController->render('transliterate/t...')
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): TransliterateController->actionTransliterate()
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('transliterate')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('transliterate/t...')
+#8 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /vagrant_data/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/transliterate/transliterate
+HTTP_REFERER=http://example.com/site/contact
+---
+2015/08/05 15:25:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /vagrant_data/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://example.com/site/contact
+---
+2015/08/05 15:25:20 [error] [exception.CException] exception 'CException' with message 'TransliterateController cannot find the requested view "transliterate/transliterate".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php:878
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(782): CController->renderPartial('transliterate/t...', NULL, true)
+#1 /vagrant_data/protected/controllers/TransliterateController.php(12): CController->render('transliterate/t...')
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): TransliterateController->actionTransliterate()
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('transliterate')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('transliterate/t...')
+#8 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /vagrant_data/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/transliterate/transliterate
+HTTP_REFERER=http://example.com/site/page?view=about
+---
+2015/08/05 15:25:31 [error] [exception.CException] exception 'CException' with message 'TransliterateController cannot find the requested view "site/transliterate".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php:878
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(782): CController->renderPartial('site/transliter...', NULL, true)
+#1 /vagrant_data/protected/controllers/TransliterateController.php(12): CController->render('site/transliter...')
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): TransliterateController->actionTransliterate()
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('transliterate')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('transliterate/t...')
+#8 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /vagrant_data/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/transliterate/transliterate
+HTTP_REFERER=http://example.com/site/page?view=about
+---
+2015/08/05 15:25:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /vagrant_data/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://example.com/site/contact
+---
+2015/08/05 15:25:37 [error] [exception.CException] exception 'CException' with message 'TransliterateController cannot find the requested view "site/transliterate".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php:878
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(782): CController->renderPartial('site/transliter...', NULL, true)
+#1 /vagrant_data/protected/controllers/TransliterateController.php(12): CController->render('site/transliter...')
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): TransliterateController->actionTransliterate()
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('transliterate')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('transliterate/t...')
+#8 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /vagrant_data/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/transliterate/transliterate
+HTTP_REFERER=http://example.com/site/page?view=about
+---
+2015/08/05 15:25:56 [error] [exception.CException] exception 'CException' with message 'TransliterateController cannot find the requested view "transliterate".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php:878
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(782): CController->renderPartial('transliterate', NULL, true)
+#1 /vagrant_data/protected/controllers/TransliterateController.php(12): CController->render('transliterate')
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): TransliterateController->actionTransliterate()
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('transliterate')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('transliterate/t...')
+#8 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /vagrant_data/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/transliterate/transliterate
+HTTP_REFERER=http://example.com/site/page?view=about
+---
+2015/08/05 15:25:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /vagrant_data/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://example.com/site/contact
+---
+2015/08/05 15:26:01 [error] [exception.CException] exception 'CException' with message 'TransliterateController cannot find the requested view "transliterate".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php:878
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(782): CController->renderPartial('transliterate', NULL, true)
+#1 /vagrant_data/protected/controllers/TransliterateController.php(12): CController->render('transliterate')
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): TransliterateController->actionTransliterate()
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('transliterate')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('transliterate/t...')
+#8 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /vagrant_data/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/transliterate/transliterate
+HTTP_REFERER=http://example.com/site/contact
+---
+2015/08/05 15:27:15 [error] [exception.CException] exception 'CException' with message 'TransliterateController cannot find the requested view "index".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php:878
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /vagrant_data/protected/controllers/TransliterateController.php(23): CController->render('index')
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): TransliterateController->actionIndex()
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('transliterate/i...')
+#8 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /vagrant_data/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/transliterate/index
+HTTP_REFERER=http://example.com/site/contact
+---
+2015/08/05 15:27:36 [error] [exception.CException] exception 'CException' with message 'TransliterateController cannot find the requested view "index".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php:878
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /vagrant_data/protected/controllers/TransliterateController.php(23): CController->render('index')
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): TransliterateController->actionIndex()
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('transliterate/i...')
+#8 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /vagrant_data/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/transliterate/index
+HTTP_REFERER=http://example.com/site/contact
+---
+2015/08/05 15:28:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tranliterate/index".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('tranliterate/in...')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tranliterate/index
+HTTP_REFERER=http://example.com/site/contact
+---
+2015/08/05 15:29:03 [error] [exception.CException] exception 'CException' with message 'TransliterateController cannot find the requested view "index".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php:878
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /vagrant_data/protected/controllers/TransliterateController.php(23): CController->render('index')
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): TransliterateController->actionIndex()
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('transliterate/i...')
+#8 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /vagrant_data/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/transliterate/index
+HTTP_REFERER=http://example.com/site/contact
+---
+2015/08/05 15:30:06 [error] [exception.CException] exception 'CException' with message 'Property "TransliterateController.handledText" is not defined.' in /vagrant_data/vendor/yiisoft/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /vagrant_data/protected/views/transliterate/index.php(7): CComponent->__get('handledText')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/CBaseController.php(126): require('/vagrant_data/p...')
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/vagrant_data/p...', NULL, true)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(869): CBaseController->renderFile('/vagrant_data/p...', NULL, true)
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /vagrant_data/protected/controllers/TransliterateController.php(23): CController->render('index')
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): TransliterateController->actionIndex()
+#7 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('transliterate/i...')
+#12 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /vagrant_data/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/transliterate/index
+HTTP_REFERER=http://example.com/site/contact
+---
+2015/08/05 15:36:03 [error] [php] Undefined variable: textToTranslit (/vagrant_data/protected/views/transliterate/index.php:7)
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(869): TransliterateController->renderFile()
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(782): TransliterateController->renderPartial()
+#2 /vagrant_data/protected/controllers/TransliterateController.php(13): TransliterateController->render()
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): TransliterateController->actionIndex()
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): TransliterateController->runAction()
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): TransliterateController->runActionWithFilters()
+#7 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): TransliterateController->run()
+#8 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /vagrant_data/index.php(13): CWebApplication->run()
+REQUEST_URI=/transliterate/index
+in /vagrant_data/protected/views/transliterate/index.php (7)
+in /vagrant_data/protected/controllers/TransliterateController.php (13)
+in /vagrant_data/index.php (13)
+2015/08/05 15:39:18 [error] [php] Undefined index: handledText (/vagrant_data/protected/views/transliterate/index.php:7)
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(869): TransliterateController->renderFile()
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(782): TransliterateController->renderPartial()
+#2 /vagrant_data/protected/controllers/TransliterateController.php(13): TransliterateController->render()
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): TransliterateController->actionIndex()
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): TransliterateController->runAction()
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): TransliterateController->runActionWithFilters()
+#7 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): TransliterateController->run()
+#8 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /vagrant_data/index.php(13): CWebApplication->run()
+REQUEST_URI=/transliterate/index
+in /vagrant_data/protected/views/transliterate/index.php (7)
+in /vagrant_data/protected/controllers/TransliterateController.php (13)
+in /vagrant_data/index.php (13)
+2015/08/05 15:45:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "transliterate".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php:483
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(270): CController->missingAction('transliterate')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('transliterate')
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/transliter...')
+#3 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /vagrant_data/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/transliterate
+HTTP_REFERER=http://example.com/site/contact
+---
+2015/08/05 16:01:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /vagrant_data/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://example.com/site/index
+---
+2015/08/11 18:57:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/08/11 18:57:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---

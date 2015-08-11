@@ -1,0 +1,7 @@
+{
+  "name": "my_test_site",
+  "require": {
+    "php": ">=5.1.0",
+    "yiisoft/yii": "1.1.16"
+  }
+}
