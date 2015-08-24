@@ -3,4 +3,6 @@ vendor/
 composer.phar
 
 .idea/
-assets/
+assets/*
+protected/runtime
+sessions/

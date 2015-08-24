@@ -10,5 +10,9 @@ return array(
 	'username' => 'root',
 	'password' => '1234',
 	'charset' => 'utf8',
+	// включаем профайлер
+	'enableProfiling' => YII_DEBUG,
+	// показываем значения параметров
+	'enableParamLogging' => YII_DEBUG,
 
 );

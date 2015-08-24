@@ -1,7 +1,9 @@
 <?php
 
-final class TranslitHelper
+final class TranslitHelper extends CComponent
 {
+    public function init()
+    {    }
     /**
      * Укр/Рус символы
      *

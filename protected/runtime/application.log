@@ -628,3 +628,1116 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2015/08/11 20:06:19 [error] [exception.CException] exception 'CException' with message 'Property "CUrlManager.useStrictPersing" is not defined.' in /vagrant_data/vendor/yiisoft/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/YiiBase.php(220): CComponent->__set('useStrictPersin...', true)
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CModule.php(393): YiiBase::createComponent(Array)
+#2 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(530): CModule->getComponent('urlManager')
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CApplication->getUrlManager()
+#4 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /vagrant_data/index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/site/contact
+HTTP_REFERER=http://example.com/transliterate/index
+---
+2015/08/11 20:08:14 [error] [exception.CException] exception 'CException' with message 'Property "CUrlManager.useStrictPersing" is not defined.' in /vagrant_data/vendor/yiisoft/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/YiiBase.php(220): CComponent->__set('useStrictPersin...', true)
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CModule.php(393): YiiBase::createComponent(Array)
+#2 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(530): CModule->getComponent('urlManager')
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CApplication->getUrlManager()
+#4 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /vagrant_data/index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/site/contact
+HTTP_REFERER=http://example.com/transliterate/index
+---
+2015/08/11 20:08:20 [error] [exception.CException] exception 'CException' with message 'Property "CUrlManager.useStrictPersing" is not defined.' in /vagrant_data/vendor/yiisoft/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/YiiBase.php(220): CComponent->__set('useStrictPersin...', true)
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CModule.php(393): YiiBase::createComponent(Array)
+#2 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(530): CModule->getComponent('urlManager')
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CApplication->getUrlManager()
+#4 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /vagrant_data/index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/transliterate/index
+HTTP_REFERER=http://example.com/transliterate/index
+---
+2015/08/11 20:08:24 [error] [exception.CException] exception 'CException' with message 'Property "CUrlManager.useStrictPersing" is not defined.' in /vagrant_data/vendor/yiisoft/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/YiiBase.php(220): CComponent->__set('useStrictPersin...', true)
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CModule.php(393): YiiBase::createComponent(Array)
+#2 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(530): CModule->getComponent('urlManager')
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CApplication->getUrlManager()
+#4 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /vagrant_data/index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/
+---
+2015/08/11 20:08:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2015/08/11 20:10:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /vagrant_data/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://example.com/
+---
+2015/08/11 20:10:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /vagrant_data/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://example.com/site/contact
+---
+2015/08/11 20:10:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /vagrant_data/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://example.com/site/contact
+---
+2015/08/11 20:10:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /vagrant_data/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://example.com/site/index
+---
+2015/08/11 20:13:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "contact.html".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/contact.html
+---
+2015/08/11 20:27:44 [error] [exception.CException] exception 'CException' with message 'Property "CUrlManager.enablePrettyUrl" is not defined.' in /vagrant_data/vendor/yiisoft/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/YiiBase.php(220): CComponent->__set('enablePrettyUrl', true)
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CModule.php(393): YiiBase::createComponent(Array)
+#2 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(530): CModule->getComponent('urlManager')
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CApplication->getUrlManager()
+#4 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /vagrant_data/index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/contact.html
+---
+2015/08/11 20:32:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "contact".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/contact
+---
+2015/08/18 18:58:34 [error] [php] include(TranslitHelper.php): failed to open stream: No such file or directory (/vagrant/data/vendor/yiisoft/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /vagrant/data/protected/commands/TransliterateCommand.php(15): spl_autoload_call()
+#1 unknown(0): TransliterateCommand->actionTransliterate()
+#2 /vagrant/data/vendor/yiisoft/yii/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#3 /vagrant/data/vendor/yiisoft/yii/framework/console/CConsoleCommandRunner.php(71): TransliterateCommand->run()
+#4 /vagrant/data/vendor/yiisoft/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#5 /vagrant/data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CConsoleApplication->processRequest()
+#6 /vagrant/data/vendor/yiisoft/yii/framework/yiic.php(33): CConsoleApplication->run()
+#7 /vagrant/data/protected/yiic.php(7): require_once()
+
+2015/08/18 19:16:05 [error] [php] include(TranslitHelper.php): failed to open stream: No such file or directory (/vagrant/data/vendor/yiisoft/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /vagrant/data/protected/commands/TransliterateCommand.php(13): spl_autoload_call()
+#1 unknown(0): TransliterateCommand->actionTransliterate()
+#2 /vagrant/data/vendor/yiisoft/yii/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#3 /vagrant/data/vendor/yiisoft/yii/framework/console/CConsoleCommandRunner.php(71): TransliterateCommand->run()
+#4 /vagrant/data/vendor/yiisoft/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#5 /vagrant/data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CConsoleApplication->processRequest()
+#6 /vagrant/data/vendor/yiisoft/yii/framework/yiic.php(33): CConsoleApplication->run()
+#7 /vagrant/data/protected/yiic.php(7): require_once()
+
+2015/08/18 19:17:52 [error] [php] include(TranslitHelper.php): failed to open stream: No such file or directory (/vagrant/data/vendor/yiisoft/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /vagrant/data/protected/commands/TransliterateCommand.php(13): spl_autoload_call()
+#1 unknown(0): TransliterateCommand->actionTransliterate()
+#2 /vagrant/data/vendor/yiisoft/yii/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#3 /vagrant/data/vendor/yiisoft/yii/framework/console/CConsoleCommandRunner.php(71): TransliterateCommand->run()
+#4 /vagrant/data/vendor/yiisoft/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#5 /vagrant/data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CConsoleApplication->processRequest()
+#6 /vagrant/data/vendor/yiisoft/yii/framework/yiic.php(33): CConsoleApplication->run()
+#7 /vagrant/data/protected/yiic.php(7): require_once()
+
+2015/08/18 19:23:04 [error] [php] include(TranslitHelper.php): failed to open stream: No such file or directory (/vagrant/data/vendor/yiisoft/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /vagrant/data/protected/commands/TransliterateCommand.php(13): spl_autoload_call()
+#1 unknown(0): TransliterateCommand->actionTransliterate()
+#2 /vagrant/data/vendor/yiisoft/yii/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#3 /vagrant/data/vendor/yiisoft/yii/framework/console/CConsoleCommandRunner.php(71): TransliterateCommand->run()
+#4 /vagrant/data/vendor/yiisoft/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#5 /vagrant/data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CConsoleApplication->processRequest()
+#6 /vagrant/data/vendor/yiisoft/yii/framework/yiic.php(33): CConsoleApplication->run()
+#7 /vagrant/data/protected/yiic.php(7): require_once()
+
+2015/08/18 19:24:11 [error] [php] include(TranslitHelper.php): failed to open stream: No such file or directory (/vagrant/data/vendor/yiisoft/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /vagrant/data/protected/commands/TransliterateCommand.php(13): spl_autoload_call()
+#1 unknown(0): TransliterateCommand->actionTransliterate()
+#2 /vagrant/data/vendor/yiisoft/yii/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#3 /vagrant/data/vendor/yiisoft/yii/framework/console/CConsoleCommandRunner.php(71): TransliterateCommand->run()
+#4 /vagrant/data/vendor/yiisoft/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#5 /vagrant/data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CConsoleApplication->processRequest()
+#6 /vagrant/data/vendor/yiisoft/yii/framework/yiic.php(33): CConsoleApplication->run()
+#7 /vagrant/data/protected/yiic.php(7): require_once()
+
+2015/08/18 19:28:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2015/08/18 19:28:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/08/18 19:28:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/08/18 19:31:42 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.TranslitHelper" is not defined.' in /vagrant_data/vendor/yiisoft/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/base/CModule.php(105): CComponent->__get('TranslitHelper')
+#1 /vagrant_data/protected/controllers/TransliterateController.php(13): CModule->__get('TranslitHelper')
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): TransliterateController->actionIndex()
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('transliterate/i...')
+#8 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /vagrant_data/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/transliterate/index.html
+HTTP_REFERER=http://example.com/transliterate/index.html
+---
+2015/08/20 19:35:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2015/08/20 19:36:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/08/20 19:36:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/08/20 19:36:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:38:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:38:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:38:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:38:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:38:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:38:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:38:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:38:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:38:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:39:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:39:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:39:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:39:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:39:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:39:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:39:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:40:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:40:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:40:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:40:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:40:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:40:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:40:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:40:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:40:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:40:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:40:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:40:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:40:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:40:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:40:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:40:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:40:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:40:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:40:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:40:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:40:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:40:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:41:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:41:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:41:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:41:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:42:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/index".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/site/index.html
+HTTP_REFERER=http://example.com/gii
+---
+2015/08/20 19:42:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/index".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/site/index.html
+HTTP_REFERER=http://example.com/gii
+---
+2015/08/20 19:42:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:42:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:42:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:42:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:42:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:42:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:44:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:44:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:44:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:44:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:44:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:44:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:44:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:47:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:47:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:47:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:49:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:49:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:49:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:49:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:49:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:49:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:49:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:49:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:49:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:49:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:49:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:49:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:49:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:49:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:49:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:49:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:49:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:51:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:51:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:51:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:51:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:51:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:55:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:55:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:58:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 19:58:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant_data/vendor/yiisoft/yii/framework/web/CUrlManager.php:374
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /vagrant_data/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/08/20 20:13:27 [error] [php] Object of class AccountUser could not be converted to string (/vagrant_data/protected/controllers/SiteController.php:32)
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): SiteController->runAction()
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /vagrant_data/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /vagrant_data/protected/controllers/SiteController.php (32)
+in /vagrant_data/index.php (13)
+2015/08/20 20:20:55 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.:first_name" is not defined.' in /vagrant_data/vendor/yiisoft/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/db/schema/CDbCriteria.php(160): CComponent->__set(':first_name', '\xD0\x90\xD0\xBB\xD0\xB5\xD0\xBA\xD1\x81\xD0\xB0\xD0\xBD\xD0...')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/db/schema/CDbCommandBuilder.php(588): CDbCriteria->__construct(Array)
+#2 /vagrant_data/vendor/yiisoft/yii/framework/db/schema/CDbCommandBuilder.php(664): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/db/ar/CActiveRecord.php(1540): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), 'first_name = :f...', Array, Array, '`t`.')
+#4 /vagrant_data/protected/controllers/SiteController.php(30): CActiveRecord->findAllByAttributes('first_name = :f...', Array)
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('')
+#10 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#11 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /vagrant_data/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/
+---
+2015/08/20 20:21:30 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.:first_name" is not defined.' in /vagrant_data/vendor/yiisoft/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/db/schema/CDbCriteria.php(160): CComponent->__set(':first_name', '\xD0\x90\xD0\xBB\xD0\xB5\xD0\xBA\xD1\x81\xD0\xB0\xD0\xBD\xD0...')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/db/schema/CDbCommandBuilder.php(588): CDbCriteria->__construct(Array)
+#2 /vagrant_data/vendor/yiisoft/yii/framework/db/schema/CDbCommandBuilder.php(664): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/db/ar/CActiveRecord.php(1540): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), 'first_name=:fir...', Array, Array, '`t`.')
+#4 /vagrant_data/protected/controllers/SiteController.php(30): CActiveRecord->findAllByAttributes('first_name=:fir...', Array)
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('')
+#10 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#11 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /vagrant_data/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/
+---
+2015/08/20 20:22:15 [error] [php] Invalid argument supplied for foreach() (/vagrant_data/vendor/yiisoft/yii/framework/db/schema/CDbCommandBuilder.php:673)
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): SiteController->runAction()
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#7 /vagrant_data/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /vagrant_data/protected/controllers/SiteController.php (30)
+in /vagrant_data/index.php (13)
+2015/08/20 20:24:39 [error] [exception.CDbException] exception 'CDbException' with message 'Table "re_account_user" does not have a column named "condition".' in /vagrant_data/vendor/yiisoft/yii/framework/db/schema/CDbCommandBuilder.php:697
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/db/ar/CActiveRecord.php(1540): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 /vagrant_data/protected/controllers/SiteController.php(32): CActiveRecord->findAllByAttributes(Array)
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /vagrant_data/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2015/08/20 20:26:26 [error] [php] Invalid argument supplied for foreach() (/vagrant_data/vendor/yiisoft/yii/framework/db/schema/CDbCommandBuilder.php:673)
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#1 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): SiteController->runAction()
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#7 /vagrant_data/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /vagrant_data/protected/controllers/SiteController.php (30)
+in /vagrant_data/index.php (13)
+2015/08/20 20:27:00 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.last_name" is not defined.' in /vagrant_data/vendor/yiisoft/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/db/schema/CDbCriteria.php(160): CComponent->__set('last_name', '\xD0\x90\xD0\xBB\xD0\xB5\xD0\xBA\xD1\x81\xD0\xB0\xD0\xBD\xD0...')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/db/schema/CDbCommandBuilder.php(588): CDbCriteria->__construct(Array)
+#2 /vagrant_data/vendor/yiisoft/yii/framework/db/schema/CDbCommandBuilder.php(664): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/db/ar/CActiveRecord.php(1540): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), 'last_name', Array, Array, '`t`.')
+#4 /vagrant_data/protected/controllers/SiteController.php(30): CActiveRecord->findAllByAttributes('last_name', Array)
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('')
+#10 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#11 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /vagrant_data/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/
+---
+2015/08/20 20:32:28 [error] [exception.CDbException] exception 'CDbException' with message 'Table "re_account_user" does not have a column named "count(first_name)".' in /vagrant_data/vendor/yiisoft/yii/framework/db/schema/CDbCommandBuilder.php:697
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/db/ar/CActiveRecord.php(1540): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 /vagrant_data/protected/controllers/SiteController.php(30): CActiveRecord->findAllByAttributes(Array)
+#2 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /vagrant_data/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2015/08/20 20:37:08 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.first_name" is not defined.' in /vagrant_data/vendor/yiisoft/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/db/schema/CDbCriteria.php(160): CComponent->__set('first_name', '\xD0\x9C\xD0\xB0\xD0\xBA\xD1\x81\xD0\xB8\xD0\xBC')
+#1 /vagrant_data/vendor/yiisoft/yii/framework/db/schema/CDbCommandBuilder.php(588): CDbCriteria->__construct(Array)
+#2 /vagrant_data/vendor/yiisoft/yii/framework/db/ar/CActiveRecord.php(1602): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /vagrant_data/protected/controllers/SiteController.php(30): CActiveRecord->count(Array)
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('')
+#9 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#10 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /vagrant_data/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/
+---
+2015/08/20 20:38:40 [error] [exception.CException] exception 'CException' with message 'AccountUser and its behaviors do not have a method or closure named "countfindAllByAttributes".' in /vagrant_data/vendor/yiisoft/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /vagrant_data/vendor/yiisoft/yii/framework/db/ar/CActiveRecord.php(227): CComponent->__call('countfindAllByA...', Array)
+#1 /vagrant_data/protected/controllers/SiteController.php(30): CActiveRecord->__call('countfindAllByA...', Array)
+#2 /vagrant_data/protected/controllers/SiteController.php(30): AccountUser->countfindAllByAttributes(Array)
+#3 /vagrant_data/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /vagrant_data/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('')
+#8 /vagrant_data/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#9 /vagrant_data/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /vagrant_data/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/
+---

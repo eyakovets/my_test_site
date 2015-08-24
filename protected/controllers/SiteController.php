@@ -27,8 +27,16 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
-		// renders the view file 'protected/views/site/index.php'
-		// using the default layout 'protected/views/layouts/main.php'
+		$socialLogins = AccountUser::model()->findByPk(784)->accountUserSocialLogins;
+
+		foreach($socialLogins as $row)
+		{
+			print_r($row->type);
+			print_r('<br>');
+		}
+
+		die();
+
 		$this->render('index');
 	}
 

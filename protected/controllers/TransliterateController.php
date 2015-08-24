@@ -7,12 +7,13 @@ class TransliterateController extends Controller
      */
     public function actionIndex()
     {
-        $textToTranslit = '';
+        $textToTranslite = '';
         if (!empty(Yii::app()->request->getParam('text')))
         {
-            $textToTranslit = TranslitHelper::transliterate(Yii::app()->request->getParam('text'), true, '-');
+            $textToTranslite = Yii::app()->TranslitHelper->transliterate(Yii::app()->request->getParam('text'), true, '-');
         }
 
-        $this->render('index', ['textToTranslit' => $textToTranslit]);
+        $this->render('index', ['textToTranslite' => $textToTranslite]);
     }
+
 }

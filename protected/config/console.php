@@ -9,8 +9,19 @@ return array(
 	// preloading 'log' component
 	'preload'=>array('log'),
 
+	/*'import' => [
+		'application.components.*'
+	],*/
+
 	// application components
 	'components'=>array(
+
+		'Transliterator' => [
+			'class'=>'application.components.Transliterator'
+		],
+		'TranslitHelper' => [
+			'class'=>'application.components.TranslitHelper'
+		],
 
 		// database settings are configured in database.php
 		'db'=>require(dirname(__FILE__).'/database.php'),
